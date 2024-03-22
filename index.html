@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <script>
+        // Redirect to the sign-in page after the page loads
+        window.onload = function() {
+            window.location.href = 'signin.html';
+        };
+    </script> -->
+</head>
+<body>
+<header>
+    <nav class="navbar"> 
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <div class="dropdown">
+            <button class="dropbtn">Resources
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <button class="sub-dropbtn">Tutorials
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="sub-dropdown-content">
+                        <div class="sub-sub-dropdown">
+                        <button class="sub-sub-dropbtn">English
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="sub-sub-dropdown-content">
+                            <a href="introduction.html">Introduction</a>
+                            <a href="articles.html">Articles</a>
+                            <a href="nouns.html">Nouns</a>
+                            <a href="pronouns.html">Pronouns</a>
+                            <a href="verbs.html">Verbs</a>
+                            <a href="adverbs.html">Adverbs</a>
+                            <a href="adjectives.html">Adjectives</a>
+                            <a href="conjunctions.html">Conjunctions</a>
+                            <a href="interjections.html">Interjections</a>
+                            <a href="prepositions.html">Prepositions</a>
+                            <a href="punctuation.html">Punctuation</a>
+                            <a href="homophones.html">Homophones</a>
+                            <a href="antonymSynonyms.html">Antonyms and Synonyms</a>
+                            <a href="stress.html">Stress</a>
+                            <a href="intonations.html">Intonation</a>
+                            <a href="sentences.html">Types of sentences</a>
+                            <a href="questionTags.html">Question Tags</a>
+                            <a href="clauses.html">Clauses</a>
+                            <a href="quantifiers.html">Quantifiers</a>
+                            <a href="phrases.html">Phrases</a>
+                            <a href="auxilliaries.html">Auxiliaries</a>
+                            <a href="proverbsAndSayings.html">Proverbs and Sayings</a>
+                            <a href="idioms.html">Idioms</a>
+                            <a href="poetry.html">Poetry</a>
+                            <a href="tenses.html">Tenses</a>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                <a href="exercises.html">Exercises</a>
+                <a href="progress.html">Progress</a>
+            </div>
+        </div> 
+    </nav>
+</header>
+
+    <main>
+        <div class="logoh1">
+            <div>
+                <img id="logo" src="/images/Logo.png" alt="Logo">
+            </div>
+    
+            <div class="h1">
+                <h1>DESTINED ADULT SCHOOL</h1>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="item-1">
+            <h2>SCHOOL MOTTO</h2>
+            <P>Redefining Possibilities.</P>
+        </div>
+
+        <div class="item-2">
+            <h2>ABOUT US</h2>
+            <p>
+              Destined Adult School is a leading platform for language learning dedicated to helping adults acquire new language skills and improve their communication abilities.
+            </p>
+            <p>
+              At Destined Adult School, we believe that learning a new language should be accessible, engaging, and effective. Our team of experienced language instructors and dedicated professionals is committed to providing high-quality language education to our students.
+            </p>
+            <p>
+              With our state-of-the-art online learning platform, students can access a wide range of language courses designed to cater to their specific needs and goals. Whether you're a beginner looking to learn the basics or an advanced learner aiming to enhance your fluency, we have the right course for you.
+            </p>
+            <p>
+              Our courses are structured to ensure a comprehensive learning experience. Through interactive lessons, real-life examples, and practical exercises, you'll develop your language skills in a supportive and engaging environment. Our instructors provide personalized guidance and feedback to help you progress quickly and effectively.
+            </p>
+            <p>
+              Join us at Destined Adult School and embark on a language learning journey that will open doors to new opportunities, expand your horizons, and connect you with a global community of learners.
+            </p>
+        </div>
+
+        <div class="about">
+        <div class="item-3">
+            <h2>OUR VALUES</h2>
+            <p>
+                The Destined School core values are encapsulated by the acronym EFA i.e.
+                <ul class="values">
+                    <li>Equality for all.</li>
+                    <li>Formal education for all.</li>
+                    <li>Access to opportunities for all.</li>
+                </ul>
+
+            </p>
+        </div> 
+  
+        <div class="item-4">
+            <h2>MISSION</h2>
+            <p>To provide formal education opportunities for the vulnerable and marginalized regardless of their ages, social status or gender.</p>
+        </div>
+        </div>
+  
+        <div class="item-5">
+            <h2>VISSION</h2>
+            <p>The Destined School Vision is of a society in which all individual of all ages are actively involved in promoting sustainable futures.</p>
+        </div>
+    </main>
+
+<script>
+    // Function to increase size when mouse is over the logo
+    const increaseSize = () => {
+        let logo = document.querySelector("#logo");
+        logo.style.width = "150px"; // Increase width
+        logo.style.height = "150px"; // Increase height
+    }
+
+    // Function to decrease size when mouse is out of the logo
+    const decreaseSize = () => {
+        let logo = document.querySelector("#logo");
+        logo.style.width = "80px"; // Decrease width
+        logo.style.height = "80px"; // Decrease height
+        logo.style.borderRadius = "50%";
+    }
+
+    // Add event listeners for mouseover and mouseout events
+    document.addEventListener("DOMContentLoaded", () => {
+        let logo = document.querySelector("#logo");
+        logo.addEventListener("mouseover", increaseSize);
+        logo.addEventListener("mouseout", decreaseSize);
+    });
+</script>
+
+<script src="firebase-init.js" type="module"></script>
+
+    <footer>
+        <p>&copy; 2024 Destined Adult School</p>
+    </footer>
+    
+</body>
+</html>
